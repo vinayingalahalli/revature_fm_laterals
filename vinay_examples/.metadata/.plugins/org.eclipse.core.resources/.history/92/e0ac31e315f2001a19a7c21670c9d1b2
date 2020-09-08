@@ -1,0 +1,15 @@
+package com.demo;
+
+import org.apache.log4j.Logger;
+
+public class Log4jAppMain {
+
+	private static Logger log=Logger.getLogger(Log4jAppMain.class);
+	
+	public static void main(String[] args) {
+		log.trace("This is log message from trace ");
+	
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.demo.service;
+
+public class ServiceClass {
+
+	public boolean isPrime(int n) {
+		int c=0;
+		boolean b=false;
+		for (int i = 1; i <=n; i++) {
+			if(n%i==0) {
+				c++;
+			}
+		}
+		if(c==2) {
+			b=true;
+		}
+		return b;
+	}
+}

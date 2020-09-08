@@ -1,0 +1,27 @@
+com.demo.Log4jAppMain -  This is log message from INFO    09-September-2020 Wednesday 02:49:54 AM IST 
+com.demo.Log4jAppMain -  This is log message from WARN    09-September-2020 Wednesday 02:49:54 AM IST 
+com.demo.Log4jAppMain -  This is log message from ERROR    09-September-2020 Wednesday 02:49:54 AM IST 
+com.demo.Log4jAppMain -  This is log message from FATAL    09-September-2020 Wednesday 02:49:54 AM IST 
+com.demo.Log4jAppMain -  This is log message from INFO againnnn   09-September-2020 Wednesday 02:49:54 AM IST 
+com.demo.Log4jAppMain -  ServiceClass object created successfully   09-September-2020 Wednesday 02:49:54 AM IST 
+com.demo.service.ServiceClass -  isPrime() was called with value of n = 3   09-September-2020 Wednesday 02:49:54 AM IST 
+com.demo.service.ServiceClass -  isPrime() executed successfully with results of prime for value =3 to true   09-September-2020 Wednesday 02:49:54 AM IST 
+com.demo.Log4jAppMain -  Yes its Prime   09-September-2020 Wednesday 02:49:54 AM IST 
+com.demo.Log4jAppMain -  This is log message from INFO    09-September-2020 Wednesday 02:50:12 AM IST 
+com.demo.Log4jAppMain -  This is log message from WARN    09-September-2020 Wednesday 02:50:12 AM IST 
+com.demo.Log4jAppMain -  This is log message from ERROR    09-September-2020 Wednesday 02:50:12 AM IST 
+com.demo.Log4jAppMain -  This is log message from FATAL    09-September-2020 Wednesday 02:50:12 AM IST 
+com.demo.Log4jAppMain -  This is log message from INFO againnnn   09-September-2020 Wednesday 02:50:12 AM IST 
+com.demo.Log4jAppMain -  ServiceClass object created successfully   09-September-2020 Wednesday 02:50:12 AM IST 
+com.demo.service.ServiceClass -  isPrime() was called with value of n = 3   09-September-2020 Wednesday 02:50:12 AM IST 
+com.demo.service.ServiceClass -  isPrime() executed successfully with results of prime for value =3 to true   09-September-2020 Wednesday 02:50:12 AM IST 
+com.demo.Log4jAppMain -  Yes its Prime   09-September-2020 Wednesday 02:50:12 AM IST 
+com.demo.Log4jAppMain - INFO -  This is log message from INFO    09-September-2020 Wednesday 02:50:33 AM IST 
+com.demo.Log4jAppMain - WARN -  This is log message from WARN    09-September-2020 Wednesday 02:50:33 AM IST 
+com.demo.Log4jAppMain - ERROR -  This is log message from ERROR    09-September-2020 Wednesday 02:50:33 AM IST 
+com.demo.Log4jAppMain - FATAL -  This is log message from FATAL    09-September-2020 Wednesday 02:50:33 AM IST 
+com.demo.Log4jAppMain - INFO -  This is log message from INFO againnnn   09-September-2020 Wednesday 02:50:33 AM IST 
+com.demo.Log4jAppMain - INFO -  ServiceClass object created successfully   09-September-2020 Wednesday 02:50:33 AM IST 
+com.demo.service.ServiceClass - INFO -  isPrime() was called with value of n = 3   09-September-2020 Wednesday 02:50:33 AM IST 
+com.demo.service.ServiceClass - INFO -  isPrime() executed successfully with results of prime for value =3 to true   09-September-2020 Wednesday 02:50:33 AM IST 
+com.demo.Log4jAppMain - INFO -  Yes its Prime   09-September-2020 Wednesday 02:50:33 AM IST 

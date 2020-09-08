@@ -1,0 +1,30 @@
+package com.demo;
+
+import org.apache.log4j.Logger;
+
+import com.demo.service.ServiceClass;
+
+public class Log4jAppMain {
+
+	private static Logger log=Logger.getLogger(Log4jAppMain.class);
+	
+	public static void main(String[] args) {
+		log.trace("This is log message from TRACE ");
+		log.debug("This is log message from DEBUG ");
+		log.info("This is log message from INFO ");
+		log.warn("This is log message from WARN ");
+		log.error("This is log message from ERROR ");
+		log.fatal("This is log message from FATAL ");
+		log.info("This is log message from INFO againnnn");
+		
+		ServiceClass s=new ServiceClass();
+		log.info("ServiceClass object created successfully");
+		if(s.isPrime(3)) {
+			log.info("Yes its Prime");
+		}else {
+			log.info("No its not Prime");
+		}
+
+	}
+
+}

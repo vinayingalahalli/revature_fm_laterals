@@ -1,0 +1,14 @@
+#setting the context of rootLogger to the log level to be enabled here
+#consoleAppender and fileAppender are identifiers you can choose any name for it
+log4j.rootLogger=INFO, consoleAppender, fileAppender
+
+#configuring console appender
+log4j.appender.consoleAppender=org.apache.log4j.ConsoleAppender
+log4j.appender.consoleAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.consoleAppender.layout.ConversionPattern= %p%m%n
+
+#configuring File Appender
+log4j.appender.fileAppender=org.apache.log4j.RollingFileAppender
+log4j.appender.fileAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.fileAppender.layout.ConversionPattern=%c -  %m   %d{dd-MMMM-yyyy EEEE HH:mm:ss a z} %n
+log4j.appender.fileAppender.File=demo.log

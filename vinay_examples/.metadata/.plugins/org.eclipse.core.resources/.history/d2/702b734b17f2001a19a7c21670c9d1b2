@@ -1,0 +1,8 @@
+package com.demo.service;
+
+public class ServiceClass {
+
+	public boolean isPrime(int n) {
+		
+	}
+}

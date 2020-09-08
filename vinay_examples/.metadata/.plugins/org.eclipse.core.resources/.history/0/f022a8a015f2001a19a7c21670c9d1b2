@@ -1,0 +1,11 @@
+package com.demo;
+
+public class Log4jAppMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}
