@@ -10,12 +10,24 @@ import org.springframework.web.bind.annotation.RestController;
 import com.app.model.Product;
 import com.app.service.ProductService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+
 @RestController
+@Api(value = "This is Product SEARCH Controller")
 public class ProductSearchController {
 
 	@Autowired
 	private ProductService service;
 	
+	@ApiOperation(value="Lists all the products available in DB",response = Product.class)
+	@ApiResponses(value= {
+			@ApiResponse(code=200, message = "Retrived all the products from DB"),
+			@ApiResponse(code=404, message = "Resource Not Found"),
+			@ApiResponse(code=401, message = "You are not authorized to view the products")
+	})
 	@GetMapping("/products")
 	public List<Product> getAllProducts() {
 		

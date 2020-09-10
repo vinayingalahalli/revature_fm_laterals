@@ -12,7 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.app.model.Product;
 import com.app.service.ProductService;
 
+import io.swagger.annotations.Api;
+
 @RestController
+@Api(value = "This is Product CRUD Controller")
 public class ProductController  {
 
 	@Autowired

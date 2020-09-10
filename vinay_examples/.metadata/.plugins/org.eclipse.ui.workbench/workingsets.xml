@@ -13,4 +13,5 @@
 <item elementID="=log4j_gradle_demo/src\/test\/resources=/gradle_scope=/test=/=/gradle_used_by_scope=/test=/=/test=/true=/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1599597247243_2" label="Window Working Set" name="Aggregate for window 1599597247243"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1599772931774_3" label="Window Working Set" name="Aggregate for window 1599772931774"/>
 </workingSetManager>

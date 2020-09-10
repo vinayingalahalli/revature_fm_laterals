@@ -5,13 +5,19 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table
+@ApiModel(value = "Product Model", description = "This model stores Products in DB")
 public class Product {
 
 	@Id
 	@GeneratedValue
+	@ApiModelProperty(name="id", value="this will generate unique ID", dataType = "int")
 	private int id;
+	@ApiModelProperty(name="name", value="product name here", dataType = "String",required = true,example = "TV")
 	private String name;
 	private double cost;
 	private float ratings;
