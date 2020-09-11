@@ -8,7 +8,7 @@ public class HelloRepositoryImpl implements HelloRepository {
 	@Override
 	public String sayHello() {
 		// TODO Auto-generated method stub
-		return "Hello from JUNIT......";
+		return "Hello from MOCKITO-JUNIT......";
 	}
 
 }

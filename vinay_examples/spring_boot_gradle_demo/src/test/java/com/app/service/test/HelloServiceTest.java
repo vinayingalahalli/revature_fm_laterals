@@ -1,20 +1,20 @@
 package com.app.service.test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
-import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import com.app.repository.HelloRepository;
 import com.app.service.HelloService;
-import com.app.service.impl.HelloServiceImpl;
 
+@RunWith(SpringRunner.class)
 @SpringBootTest
 public class HelloServiceTest {
 /*
@@ -31,25 +31,26 @@ public class HelloServiceTest {
         </dependency>
  */
 	
-	//@Autowired
+	@Autowired
+	private HelloService service;
 	
 	
 	 
-	 @Mock
+	 @MockBean
 	 private HelloRepository repository;
 	 
-	 @InjectMocks
-	 private HelloService helloService=new HelloServiceImpl();
-	 
-	 @Before
-	public void setUpMockObject() {
-		 System.out.println("Before Each");
-		 when(repository.sayHello()).thenReturn("Hello from Mockito Response");
-	 }
 	
+//	 
+//	 @Before
+//	public void setUpMockObject() {
+//		 System.out.println("Before Each");
+//		 when(repository.sayHello()).thenReturn("Hello from Mockito Response");
+//	 }
+//	
 	@Test
 	public void testSayHello() {
-		System.out.println(helloService.sayHello());
-		assertEquals("Hello from JUNIT......", helloService.sayHello());
+		//System.out.println(helloService.sayHello());
+		when(repository.sayHello()).thenReturn("Hello from JUNIT......");
+		assertEquals("Hello from JUNIT......", service.sayHello());
 	}
 }

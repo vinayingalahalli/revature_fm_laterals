@@ -1,5 +1,7 @@
 package com.app.model;
 
+import java.util.Objects;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -66,5 +68,38 @@ public class Product {
 	public void setManufacturerName(String manufacturerName) {
 		this.manufacturerName = manufacturerName;
 	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Product other = (Product) obj;
+		return id == other.id;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", cost=" + cost + ", ratings=" + ratings
+				+ ", manufacturerName=" + manufacturerName + "]";
+	}
+
+	public Product(String name, double cost, float ratings, String manufacturerName) {
+		super();
+		this.name = name;
+		this.cost = cost;
+		this.ratings = ratings;
+		this.manufacturerName = manufacturerName;
+	}
+	
+	
 	
 }
